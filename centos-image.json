@@ -15,7 +15,7 @@
   }],
   "provisioners": [{
     "type": "ansible",
-    "playbook_file": "./playbook.yml",
+    "playbook_file": "/ansible-configuration/playbook.yml",
     "extra_arguments": "-vvvv",
     "user": "ec2-user",
     "host_alias": "default",
