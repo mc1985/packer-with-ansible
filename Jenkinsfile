@@ -11,13 +11,13 @@ pipeline {
         }
         stage('Deploy Docker container for packer') {
             steps {
-                sh "docker build -t packer .)"
+                sh 'docker build -t packer .'
                 echo 'Building..'
             }
         }
         stage('Build Image') {
             steps {
-                 sh "docker run -it packer <commands>)"
+                 sh 'docker run -it packer <commands>'
                 echo 'packaging'
             }
         }
